@@ -5,7 +5,7 @@ rule process_hollowing
         $2 = "UnmapViewOfSection" nocase wide ascii
 	$3 = "VirtualAllocEx" nocase wide ascii
 	$4 = "WriteProcessMemory" nocase wide ascii
-	$5 = "ResumeThreat" nocase wide ascii
+	$5 = "ResumeThread" nocase wide ascii
     condition:
 	all of ($*)
 }
